@@ -1,3 +1,12 @@
+.socialBar > a:link {
+    text-decoration: none;
+}
+
+.socialIcon {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
 .textBlock {
     margin: auto;
     max-width: 50%;
