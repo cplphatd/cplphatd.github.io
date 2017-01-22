@@ -5,7 +5,7 @@
 (function () {
 
     //Smooth scroll event listener
-    $(document).on("click", "a", function(event) {
+    $(document).on("click", ".anchorNav", function(event) {
         event.preventDefault();
 
         $("html, body").animate({
