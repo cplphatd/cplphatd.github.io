@@ -32,7 +32,7 @@
 
     //Sends ajax .get request and returns object of info
     var getWeatherInfo = function () {
-        return $.get("https://api.openweathermap.org/data/2.5/forecast/daily", {
+        return $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
             APPID: "e8f4c94a52cb7419ca9257f022da00fc",
             lat: userLat,
             lon: userLng,
@@ -95,7 +95,7 @@
                 pageContents +=
                     "<div class='box'><h4>" + moment(date).format("dddd DD MMM YYYY") + "</h4>"
                     + "<h2>" + Math.round(weatherInfo.list[i].temp.max) + "/" + Math.round(weatherInfo.list[i].temp.min) + "°</h2>"
-                    + "<div><img src='https://openweathermap.org/img/w/" + weatherInfo.list[i].weather[0].icon +".png'></div>"
+                    + "<div><img src='http://openweathermap.org/img/w/" + weatherInfo.list[i].weather[0].icon +".png'></div>"
                     + "<h4>" + weatherInfo.list[i].weather[0].main + ": " + weatherInfo.list[i].weather[0].description + "</h4>"
                     + "<h4>Humidity: " + weatherInfo.list[i].humidity + "%</h4>"
                     + "<h4>Wind Speed: " + weatherInfo.list[i].speed + "mph</h4>"
