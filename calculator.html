@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/calculator.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="horizContainer">
+                <h1 id="title">Simple Calculator</h1>
+            </div>
+            <div class="calculatorContainer rounded">
+                <div id="msg" class="invisible">Game over. Cannot divide by zero. Clear and try again.</div>
+                <div id="displayContainer">
+                    <input id="leftOperand" class="display rounded" value="0" readonly>
+                    <input id="operator" class="display rounded" readonly>
+                    <input id="rightOperand" class="display rounded" readonly>
+                </div>
+                <div class="calcChild">
+                    <button id="btnOne" class="button num-btn">1</button>
+                    <button id="btnTwo" class="button num-btn">2</button>
+                    <button id="btnThree" class="button num-btn">3</button>
+                    <button id="btnPlus" class="button operator-btn">+</button>
+                    <button id="btnMinus" class="button operator-btn">-</button>
+                </div>
+                <div class="calcChild">
+                    <button id="btnFour" class="button num-btn">4</button>
+                    <button id="btnFive" class="button num-btn">5</button>
+                    <button id="btnSix" class="button num-btn">6</button>
+                    <button id="btnMultiply" class="button operator-btn">*</button>
+                    <button id="btnDivide" class="button operator-btn">/</button>
+                </div>
+                <div class="calcChild">
+                    <button id="btnSeven" class="button num-btn">7</button>
+                    <button id="btnEight" class="button num-btn">8</button>
+                    <button id="btnNine" class="button num-btn">9</button>
+                    <button id="btnSquare" class="button operator-btn">sq</button>
+                    <button id="btnSqRoot" class="button operator-btn">sqrt</button>
+                </div>
+                <div class="calcChild">
+                    <button id="btnClear" class="button">C</button>
+                    <button id="btnZero" class="button num-btn">0</button>
+                    <button id="btnEquals" class="button other-btn">=</button>
+                    <button id="btnDecimal" class="button other-btn">.</button>
+                    <button id="btnPosNeg" class="button other-btn">+/-</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-2.2.4.js"></script>
+        <script src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <script src="js/calculator.js"></script>
+    </body>
+</html>
