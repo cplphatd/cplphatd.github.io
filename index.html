@@ -11,19 +11,46 @@
         <link rel="icon" href="img/favicon.ico">
     </head>
     <body>
+
+    <nav class="navbar navbar-default">
+
+        <div class="navbar-collapse">
+
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand anchorNav" href="#contact">@cplphatd</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" class="anchorNav">About</a></li>
+                    <li><a href="#resume" class="anchorNav">Resume</a></li>
+                    <li><a href="#contact" class="anchorNav">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+
+    </nav>
+
         <a id="home"></a>
         <div class="site-wrapper">
+
             <div class="site-wrapper-inner">
+
                 <div class="cover-container">
+
                     <div class="inner cover">
-                        <a href="mailto: david.alviola@gmail.com">
+
+                        <a href="#about" class="anchorNav">
                             <img src="img/alviolaHeadshot.png">
                         </a>
+
                         <h1 class="cover-heading">David Ryan Alviola</h1>
                         <p class="lead">Full-stack developer in San Antonio</p>
                         <p class="lead">
                             <a href="#portfolio" class="btn btn-danger btn-lg anchorNav">My Portfolio</a>
                         </p>
+
                         <p class="socialBar">
                             <a id="github" href="https://github.com/cplphatd" target="_blank">
                                 <img src="img/gitHub.png" class="socialIcon">
@@ -38,10 +65,15 @@
                                 <img class="socialIcon" src="img/twitter.png">
                             </a>
                         </p>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
         <div>
             <a id="portfolio"></a>
             <h2>Portfolio</h2>
@@ -61,7 +93,7 @@
 
                 <div class="item active">
                     <div class="container">
-                        <a href="http://www.google.com" target="_blank">
+                        <a href="https://www.google.com" target="_blank">
                             <img src="img/sunny.gif">
                         </a>
                     </div>
@@ -69,7 +101,7 @@
 
                 <div class="item">
                     <div class="container">
-                        <a href="http://www.google.com" target="_blank">
+                        <a href="https://www.google.com" target="_blank">
                             <img src="img/snow.gif">
                         </a>
                     </div>
@@ -77,7 +109,7 @@
 
                 <div class="item">
                     <div class="container">
-                        <a href="http://www.google.com" target="_blank">
+                        <a href="https://github.com/cplphatd/adlister" target="_blank">
                             <img src="img/index.png">
                         </a>
                     </div>
@@ -85,7 +117,7 @@
 
                 <div class="item">
                     <div class="container">
-                        <a href="http://cplphatd.github.io/simon.html" target="_blank">
+                        <a href="https://cplphatd.github.io/simon.html" target="_blank">
                             <img src="img/Simple_Simon.png">
                         </a>
                     </div>
@@ -93,7 +125,7 @@
 
                 <div class="item">
                     <div class="container">
-                        <a href="http://cplphatd.github.io/weather_map.html" target="_blank">
+                        <a href="https://github.com/cplphatd/weather-map-app" target="_blank">
                             <img src="img/weather_map_app.png">
                         </a>
                     </div>
@@ -101,8 +133,8 @@
 
                 <div class="item">
                     <div class="container">
-                        <a href="http://cplphatd.github.io/calculator.html" target="_blank">
-                            <img src="img/snow.gif">
+                        <a href="https://cplphatd.github.io/calculator.html" target="_blank">
+                            <img src="img/calculator.png">
                         </a>
                     </div>
                 </div>
@@ -121,8 +153,8 @@
 
         <a id="about"></a>
         <h2>About</h2>
-        <div>
-            <p class="textBlock">
+        <div class="container">
+            <p class="section">
                 Just to remind me that an MMO isn't all sweetness and light, I encountered an Imperial L50 on
                 Tatooine the other day. The controls do everything you would expect, even allowing you to touch
                 the characters and enemies you want to perform an action without forcing you to utilize old
@@ -135,7 +167,7 @@
 
         <a id="resume"></a>
         <h2>Resume</h2>
-        <div class="resumeTabs">
+        <div class="section">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#menu1">Skills</a></li>
                 <li><a data-toggle="tab" href="#menu2">Experience</a></li>
@@ -235,6 +267,27 @@
 
                 </div>
             </div>
+        </div>
+
+        <a id="contact"></a>
+        <h2>Contact Me!</h2>
+        <div class="section container">
+            <form action="https://www.elformo.com/forms/c93604dc-986f-431f-acad-fa8e9b8be64a"
+                   method="post" accept-charset="UTF-8">
+
+                <label for="elformo_honeypot" class="hidden">honeypot</label>
+                <input id="elformo_honeypot" name="elformo_honeypot" class="hidden">
+
+                <label for="email">Your email:</label>
+                <input id="email" name="email" type="email" class="form-control form-group"
+                       placeholder="I'll respond to you at this email."/>
+
+                <label for="comment">Comments:</label>
+                <textarea id="comment" name="comment" class="form-control form-group"
+                          placeholder="Let me know what you think!"></textarea>
+
+                <input id="submit" name="submit" type="Submit" class="btn btn-success"/>
+            </form>
         </div>
 
         <script src="js/jquery-2.2.4.js"></script>

@@ -2,11 +2,15 @@
     text-decoration: none;
 }
 
+.footerContent {
+    margin-top: 8px;
+}
+
 .highlight {
     font-weight: bold;
 }
 
-.resumeTabs {
+.section {
     margin: auto;
     max-width: 50%;
 }
@@ -16,7 +20,7 @@
     margin-right: 1%;
 }
 
-.textBlock {
-    margin: auto;
-    max-width: 50%;
+
+#comment {
+    height: 10em;
 }
