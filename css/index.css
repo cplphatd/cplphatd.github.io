@@ -12,7 +12,11 @@
 
 .section {
     margin: auto;
-    max-width: 50%;
+    max-width: 75%;
+}
+
+.sectionTitle:link {
+    text-decoration: none;
 }
 
 .socialIcon {
